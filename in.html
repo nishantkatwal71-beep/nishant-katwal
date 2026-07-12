@@ -1,157 +1,168 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nishant Katwal - Personal Portfolio</title>
 </head>
 
 <body>
 
     <header>
-        <h1 align="center">Nishant Katwal</h1>
+        <h1>Nishant Katwal</h1>
 
-        <nav align="center">
-            <a href="#about">About</a> |
-            <a href="#skills">Skills</a> |
-            <a href="#projects">Projects</a> |
-            <a href="#contact">Contact</a>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
 
         <hr>
 
-        <center>
-            <img src="nis.jpg" alt="Profile Picture" width="150">
-        </center>
+        <img src="nis.jpg"
+             alt="Profile picture of Nishant Katwal"
+             width="150">
 
         <hr>
     </header>
 
     <main>
 
-        <table border="1" width="100%" cellpadding="10">
+        <table>
+            <tbody>
+                <tr>
 
-            <tr>
-
-                <!-- Left Column -->
-                <td width="30%" valign="top">
-
-                    <section id="about">
-                        <h2>About Me</h2>
-
-                        <p>
-                            I am Nishant Katwal, currently pursuing a Bachelor of
-                            Information Technology (BIT). I have 7–8 years of
-                            customer service experience from my family-owned retail
-                            business. I have also worked in a restaurant,
-                            mobile & accessories shop, and volunteered in an NGO.
-                            I enjoy technology, networking, and web development.
-                        </p>
-                    </section>
-
-                    <section id="skills">
-                        <h2>Technical Skills</h2>
-
-                        <dl>
-                            <dt>HTML</dt>
-                            <dd>Semantic Web Pages</dd>
-
-                            <dt>Java</dt>
-                            <dd>Object-Oriented Programming</dd>
-
-                            <dt>Python</dt>
-                            <dd>Programming Fundamentals</dd>
-
-                            <dt>Networking</dt>
-                            <dd>Cisco Packet Tracer</dd>
-
-                            <dt>Communication</dt>
-                            <dd>Customer Service & Leadership</dd>
-                        </dl>
-
-                    </section>
-
-                </td>
-
-                <!-- Middle Column -->
-                <td width="40%" valign="top">
-
-                    <section id="projects">
-
-                        <h2>Featured Projects</h2>
-
-                        <article>
-
-                            <h3>1. Personal Portfolio Website</h3>
+                    <!-- Left Column -->
+                    <td>
+                        <section id="about">
+                            <h2>About Me</h2>
 
                             <p>
-                                Developed a semantic HTML5 portfolio website
-                                introducing my background, work experience,
-                                technical skills, and contact information.
+                                I am Nishant Katwal, currently pursuing a Bachelor of
+                                Information Technology (BIT). I have 7–8 years of
+                                customer service experience from my family-owned retail
+                                business. I have also worked in a restaurant,
+                                mobile and accessories shop, and volunteered in an NGO.
+                                I enjoy technology, networking, and web development.
                             </p>
+                        </section>
+
+                        <section id="skills">
+                            <h2>Technical Skills</h2>
+
+                            <dl>
+                                <dt>HTML</dt>
+                                <dd>Semantic Web Pages</dd>
+
+                                <dt>Java</dt>
+                                <dd>Object-Oriented Programming</dd>
+
+                                <dt>Python</dt>
+                                <dd>Programming Fundamentals</dd>
+
+                                <dt>Networking</dt>
+                                <dd>Cisco Packet Tracer</dd>
+
+                                <dt>Communication</dt>
+                                <dd>Customer Service and Leadership</dd>
+                            </dl>
+                        </section>
+                    </td>
+
+                    <!-- Middle Column -->
+                    <td>
+                        <section id="projects">
+                            <h2>Featured Projects</h2>
+
+                            <article>
+                                <h3>1. Personal Portfolio Website</h3>
+
+                                <p>
+                                    Developed a semantic HTML5 portfolio website
+                                    introducing my background, work experience,
+                                    technical skills, and contact information.
+                                </p>
+
+                                <p>
+                                    <a href="https://github.com/nishantkatwal71-beep/nishant-katwal">
+                                        View GitHub Repository
+                                    </a>
+                                </p>
+                            </article>
+
+                            <hr>
+
+                            <article>
+                                <h3>2. Student Management System</h3>
+
+                                <p>
+                                    Java application demonstrating object-oriented
+                                    programming concepts for managing student records.
+                                </p>
+
+                                <p>
+                                    <a href="https://github.com/nishantkatwal71-beep">
+                                        View GitHub Repository
+                                    </a>
+                                </p>
+                            </article>
+                        </section>
+                    </td>
+
+                    <!-- Right Column -->
+                    <td>
+                        <section id="contact">
+                            <h2>Contact Me</h2>
 
                             <p>
-                                <a href="https://github.com/nishantkatwal71-beep/nishant-katwal.git">
-                                    View GitHub Repository
-                                </a>
+                                Have a project or opportunity?
+                                Feel free to contact me.
                             </p>
 
-                        </article>
+                            <form action="#" method="post">
 
-                        <hr>
+                                <p>
+                                    <label for="name">Full Name</label><br>
+                                    <input type="text"
+                                           id="name"
+                                           name="name"
+                                           size="30"
+                                           required>
+                                </p>
 
-                        <article>
+                                <p>
+                                    <label for="email">Email Address</label><br>
+                                    <input type="email"
+                                           id="email"
+                                           name="email"
+                                           size="30"
+                                           required>
+                                </p>
 
-                            <h3>2. Student Management System</h3>
+                                <p>
+                                    <label for="message">Message</label><br>
+                                    <textarea id="message"
+                                              name="message"
+                                              rows="8"
+                                              cols="30"
+                                              required></textarea>
+                                </p>
 
-                            <p>
-                                Java application demonstrating object-oriented
-                                programming concepts for managing student records.
-                            </p>
+                                <p>
+                                    <button type="submit">Send Message</button>
+                                    <button type="reset">Clear</button>
+                                </p>
 
-                            <p>
-                                GitHub Repository
-                            </p>
+                            </form>
+                        </section>
+                    </td>
 
-                        </article>
-
-                    </section>
-
-                </td>
-
-                <!-- Right Column -->
-                <td width="30%" valign="top">
-
-                    <section id="contact">
-
-                        <h2>Contact Me</h2>
-
-                        <p>
-                            Have a project or opportunity?
-                            Feel free to contact me.
-                        </p>
-
-                        <form>
-
-                            <label>Full Name</label><br>
-                            <input type="text" size="30"><br><br>
-
-                            <label>Email Address</label><br>
-                            <input type="email" size="30"><br><br>
-
-                            <label>Message</label><br>
-                            <textarea rows="8" cols="30"></textarea><br><br>
-
-                            <input type="submit" value="Send Message">
-                            <input type="reset" value="Clear">
-
-                        </form>
-
-                    </section>
-
-                </td>
-
-            </tr>
-
+                </tr>
+            </tbody>
         </table>
 
     </main>
@@ -159,21 +170,15 @@
     <hr>
 
     <footer>
+        <p>
+            <strong>Location:</strong> Kathmandu, Nepal
+            |
+            <strong>Email:</strong> nishantkatwal71@gmail.com
+        </p>
 
-        <center>
-
-            <p>
-                <strong>Location:</strong> Kathmandu, Nepal
-                &nbsp;&nbsp;&nbsp;
-                <strong>Email:</strong> nishantkatwal71@gmail.com
-            </p>
-
-            <p>
-                &copy; 2026 Nishant Katwal. All Rights Reserved.
-            </p>
-
-        </center>
-
+        <p>
+            &copy; 2026 Nishant Katwal. All Rights Reserved.
+        </p>
     </footer>
 
 </body>
