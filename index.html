@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nishant Katwal - Personal Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
@@ -30,16 +30,40 @@
     <section class="hero">
 
         <img src="nis.jpg"
-             alt="Profile picture of Nishant Katwal"
+             alt="Profile Picture"
              class="profile">
 
-        <p>
-            Bachelor of Information Technology Student
-        </p>
+        <h2>Welcome to My Portfolio</h2>
+
+        <p>Bachelor of Information Technology Student</p>
+
+    </section>
+
+    <!-- IMAGE SLIDER -->
+
+    <section class="slider">
+
+        <div class="slides">
+
+            <img src="images/slide1.jpg" alt="Slide 1">
+
+            <img src="images/slide2.jpg" alt="Slide 2">
+
+            <img src="images/slide3.jpg" alt="Slide 3">
+
+        </div>
+
+        <button class="prev">&#10094;</button>
+
+        <button class="next">&#10095;</button>
+
+        <div class="dots"></div>
 
     </section>
 
     <div class="container">
+
+        <!-- ABOUT -->
 
         <section id="about" class="card">
 
@@ -55,38 +79,48 @@
 
         </section>
 
+        <!-- SKILLS -->
+
         <section id="skills" class="card">
 
             <h2>Technical Skills</h2>
 
-            <dl>
+            <button class="accordion">HTML</button>
+            <div class="panel">
+                <p>Semantic HTML5 Web Development</p>
+            </div>
 
-                <dt>HTML</dt>
-                <dd>Semantic Web Pages</dd>
+            <button class="accordion">Java</button>
+            <div class="panel">
+                <p>Object-Oriented Programming</p>
+            </div>
 
-                <dt>Java</dt>
-                <dd>Object-Oriented Programming</dd>
+            <button class="accordion">Python</button>
+            <div class="panel">
+                <p>Programming Fundamentals</p>
+            </div>
 
-                <dt>Python</dt>
-                <dd>Programming Fundamentals</dd>
+            <button class="accordion">Networking</button>
+            <div class="panel">
+                <p>Cisco Packet Tracer, Basic Routing & Switching</p>
+            </div>
 
-                <dt>Networking</dt>
-                <dd>Cisco Packet Tracer</dd>
-
-                <dt>Communication</dt>
-                <dd>Customer Service and Leadership</dd>
-
-            </dl>
+            <button class="accordion">Communication</button>
+            <div class="panel">
+                <p>Customer Service, Leadership and Teamwork</p>
+            </div>
 
         </section>
+
+        <!-- PROJECTS -->
 
         <section id="projects" class="card">
 
             <h2>Featured Projects</h2>
 
-            <article>
+            <button class="accordion">Personal Portfolio Website</button>
 
-                <h3>Personal Portfolio Website</h3>
+            <div class="panel">
 
                 <p>
                     Developed a semantic HTML5 portfolio website introducing my
@@ -94,28 +128,30 @@
                     information.
                 </p>
 
-                <a href="https://github.com/nishantkatwal71-beep/nishant-katwal">
+                <a href="https://github.com/nishantkatwal71-beep/nishant-katwal" target="_blank">
                     GitHub Repository
                 </a>
 
-            </article>
+            </div>
 
-            <article>
+            <button class="accordion">Student Management System</button>
 
-                <h3>Student Management System</h3>
+            <div class="panel">
 
                 <p>
                     Java application demonstrating object-oriented programming
                     concepts for managing student records.
                 </p>
 
-                <a href="https://github.com/nishantkatwal71-beep">
+                <a href="https://github.com/nishantkatwal71-beep" target="_blank">
                     GitHub Repository
                 </a>
 
-            </article>
+            </div>
 
         </section>
+
+        <!-- CONTACT -->
 
         <section id="contact" class="card">
 
@@ -128,6 +164,7 @@
                 <input
                     type="text"
                     id="name"
+                    placeholder="Enter your full name"
                     required>
 
                 <label for="email">Email</label>
@@ -135,6 +172,7 @@
                 <input
                     type="email"
                     id="email"
+                    placeholder="Enter your email"
                     required>
 
                 <label for="message">Message</label>
@@ -142,6 +180,7 @@
                 <textarea
                     id="message"
                     rows="6"
+                    placeholder="Write your message..."
                     required></textarea>
 
                 <button type="submit">
@@ -160,15 +199,13 @@
 
     <p>Kathmandu, Nepal</p>
 
-    <p>
-        nishantkatwal71@gmail.com
-    </p>
+    <p>Email: nishantkatwal71@gmail.com</p>
 
-    <p>
-        © 2026 Nishant Katwal
-    </p>
+    <p>© 2026 Nishant Katwal. All Rights Reserved.</p>
 
 </footer>
+
+<script src="slider.js"></script>
 
 </body>
 </html>
